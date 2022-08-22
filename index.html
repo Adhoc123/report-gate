@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Five</title>
+    <title>Best Five Players</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -12,13 +12,13 @@
     <header>
         <section>
             <div class="text-center bg-black py-32 h-15">
-                <h1 class="font-mono text-orange-500 font-medium text-7xl">Select Your Best Five</h1>
+                <h1 class="font-mono text-orange-500 font-medium text-7xl">Best Five Players</h1>
                 <p class="text-white px-80 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt illo commodi blanditiis in! Ad at sed magni laudantium voluptatem assumenda ex nam fugiat asperiores corrupti, perferendis recusandae vero delectus rem!</p>
             </div>
         </section>
     </header>
     <main>
-        <section>
+        <section class="">
             <div class=" grid grid-cols-2 gap-4  ml-72">
                 <div class="grid grid-cols-3 gap-4 w-fit mt-16 ">
                     <div class="card bg-black shadow-xl h-72 ">
@@ -30,7 +30,7 @@
                         <div class="card-body items-center text-center text-white">
                           <h2 class="card-title">Kylian Mbappé</h2>
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -42,7 +42,7 @@
                           <h2 class="card-title">Lionel Messi</h2>
                          
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -54,7 +54,7 @@
                           <h2 class="card-title">Neymar Jr</h2>
                         
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -66,7 +66,7 @@
                           <h2 class="card-title">Renato Sanches</h2>
                           
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -78,7 +78,7 @@
                           <h2 class="card-title">Ronaldo</h2>
                           
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -90,7 +90,7 @@
                           <h2 class="card-title">Sergio Ramos</h2>
                          
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -102,7 +102,7 @@
                           <h2 class="card-title">Vítor Machado</h2>
                           
                           <div class="card-actions">
-                            <button class="btn btn-primary px-10">SELECT</button>
+                            <button class="btn btn-primary px-10" onclick="addNameToList(this)">SELECT</button>
                           </div>
                         </div>
                       </div>
@@ -113,7 +113,7 @@
                         <div class="card items-center text-center text-white">
                             <h2 class="card-title m-5 text-2xl underline underline-offset-8">Selected-V</h2>
                         </div>
-                        <ol class="list-decimal ml-10 text-white mb-4">
+                        <ol class="list-decimal ml-10 text-white mb-4" id="player-list">
                             <li>Now this is</li>
                             <li>Now this is</li>
                             <li>Now this is</li>
