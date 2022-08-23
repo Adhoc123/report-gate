@@ -124,12 +124,12 @@
                           <h2 class="card-title m-5 text-4xl  underline underline-offset-8">Budget</h2>
                         </div>
                         <p class="text-white text-center">Per Player</p>
-                        <input type="text" class="w-3/4 mx-5 rounded">
+                        <input id="per-player" type="text" class="w-3/4 mx-5 rounded">
                         
-                        <button class="btn btn-primary m-5">Calculate</button>
+                        <button id="calculate" class="btn btn-primary m-5">Calculate</button>
                         
                         <p class="text-white text-center mt-2">Player Expenses<p>
-                        <p class="text-white text-center mb-2">$5000</p>
+                        <p class="text-orange-500 text-center mb-2">$<span id="player-expense">5000</span></p>
                         <p class="text-white text-center">Manager</p>
                         <input type="text" class="w-3/4 mx-5 rounded">
                         <p class="text-white text-center">Coach</p>
@@ -146,6 +146,7 @@
     </main>
    
     <script src="js/interact.js"></script>
+    <script src="js/expense.js"></script>
 </body>
 <footer class="text-center bg-black p-20 mt-5 text-white">
     Copyright@2022 All Rights Reserved.
